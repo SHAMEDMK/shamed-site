@@ -913,11 +913,14 @@ ul {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
+    pointer-events: none;
 }
 
 .mobile-menu.is-open {
+    display: block;
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
 }
 
 .mobile-menu ul {

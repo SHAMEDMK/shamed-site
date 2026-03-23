@@ -30,6 +30,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mobile menu (hamburger)
     const navToggle = document.querySelector('.nav-toggle');
     const mobileMenu = document.getElementById('mobileMenu');
+    const closeMobileMenu = () => {
+        mobileMenu.classList.remove('is-open');
+        if (navToggle) {
+            navToggle.setAttribute('aria-expanded', 'false');
+            navToggle.setAttribute('aria-label', 'Ouvrir le menu');
+        }
+        document.body.style.overflow = '';
+    };
     if (navToggle && mobileMenu) {
         navToggle.addEventListener('click', () => {
             const isOpen = mobileMenu.classList.toggle('is-open');
@@ -38,12 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.style.overflow = isOpen ? 'hidden' : '';
         });
         mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.remove('is-open');
-                navToggle.setAttribute('aria-expanded', 'false');
-                navToggle.setAttribute('aria-label', 'Ouvrir le menu');
-                document.body.style.overflow = '';
-            });
+            link.addEventListener('click', closeMobileMenu);
+        });
+        /* Fermer en cliquant sur le fond (overlay) */
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) closeMobileMenu();
         });
     }
 
