@@ -169,8 +169,28 @@ ul {
     color: var(--clr-white);
 }
 
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo img {
+    height: 42px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
 .logo-accent {
     color: var(--clr-white);
+}
+
+.logo .logo-fallback {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 
 .nav-links {
