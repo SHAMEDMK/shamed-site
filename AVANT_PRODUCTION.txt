@@ -1,0 +1,31 @@
+========================================
+  À FAIRE AVANT LA MISE EN PRODUCTION
+========================================
+
+1. RÉSEAUX SOCIAUX
+   Remplacer les URLs Facebook et Instagram par vos vraies pages :
+   - Facebook : https://www.facebook.com/shamed.ma → votre page
+   - Instagram : https://www.instagram.com/shamed.ma → votre compte
+   Recherche : facebook.com/shamed.ma et instagram.com/shamed.ma
+
+2. WHATSAPP
+   Remplacer "212600000000" par votre vrai numéro (format international sans +)
+   Fichiers : index.html, contact.html, a-propos.html, pmma.html, zircone.html, resine-3d.html
+   Recherche : wa.me/212600000000
+
+3. FORMULAIRE DE CONTACT
+   - Créer un compte sur https://formspree.io
+   - Créer un formulaire, récupérer votre ID
+   - Dans contact.html : remplacer YOUR_FORM_ID dans action="https://formspree.io/f/YOUR_FORM_ID"
+
+4. PAGES LÉGALES
+   - mentions-legales.html et politique-confidentialite.html : remplir les [placeholders]
+     (raison sociale, adresse, hébergeur, etc.)
+
+5. SITEMAP / ROBOTS
+   - sitemap.xml et robots.txt utilisent https://www.shamed.ma
+   - Si le domaine diffère, adapter les URLs dans ces fichiers
+
+6. VÉRIFIER
+   - Ouvrir chaque page en local pour tester le menu mobile (réduire la fenêtre)
+   - Vérifier que toutes les images s'affichent
