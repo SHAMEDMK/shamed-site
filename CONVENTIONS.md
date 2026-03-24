@@ -26,7 +26,7 @@
 ### Obligatoire sur chaque page
 
 - Skip link : `<a href="#main" class="skip-link">Aller au contenu</a>` en début de `body`
-- Nav `glass-nav` avec logo `S`hamed. et dropdown Produits
+- Nav `glass-nav` avec logo (`images/logoshamed.png`) ou fallback texte `S`hamed. et dropdown Produits
 - Menu mobile `#mobileMenu` avec tous les liens
 - Contenu principal avec `id="main"` sur le hero
 - Footer avec marque, contact, réseaux sociaux, liens légaux
