@@ -42,6 +42,10 @@ URL publique du site :
 
 Vous pouvez retirer l’ancien domaine `shamed-vtrine.vercel.app` dans Vercel → **Domains** s’il est encore listé et inutile.
 
+### Logo navigation
+
+Fichier attendu : **`images/logocuivre_shamed-removebg.png`** (fond transparent). Si l’image est absente, le texte « Shamed. » s’affiche.
+
 ## Prérequis avant production
 
 Voir `AVANT_PRODUCTION.txt` : WhatsApp, Formspree, réseaux sociaux, pages légales.
