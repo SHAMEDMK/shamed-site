@@ -32,6 +32,18 @@ Site vitrine de **Shamed**, distributeur Kerox Dental au Maroc. Solutions dentai
 
 Prévu pour déploiement sur **Vercel** (site statique).
 
+### URL Vercel (preview)
+
+L’URL du projet sur Vercel correspond au **nom du projet** dans le tableau de bord Vercel :
+
+| URL qui fonctionne | Remarque |
+|--------------------|----------|
+| `https://shamed-vtrine.vercel.app` | Nom du projet : **shamed-vtrine** (sans **i** dans « vitrine ») |
+
+Si vous tapez `shamed-vitrine.vercel.app` (avec **i**), vous obtenez une **404** : ce n’est pas le même sous-domaine.
+
+**Pour corriger** : dans Vercel → projet → **Settings** → **General** → **Project Name**, renommer en `shamed-vitrine` (orthographe correcte). L’URL deviendra alors `https://shamed-vitrine.vercel.app` (l’ancienne `shamed-vtrine` peut rediriger un temps selon Vercel).
+
 ## Prérequis avant production
 
 Voir `AVANT_PRODUCTION.txt` : WhatsApp, Formspree, réseaux sociaux, pages légales.
