@@ -32,17 +32,15 @@ Site vitrine de **Shamed**, distributeur Kerox Dental au Maroc. Solutions dentai
 
 Prévu pour déploiement sur **Vercel** (site statique).
 
-### URL Vercel (preview)
+### URL Vercel (production)
 
-L’URL du projet sur Vercel correspond au **nom du projet** dans le tableau de bord Vercel :
+URL publique du site :
 
-| URL qui fonctionne | Remarque |
-|--------------------|----------|
-| `https://shamed-vtrine.vercel.app` | Nom du projet : **shamed-vtrine** (sans **i** dans « vitrine ») |
+**`https://shamed-site.vercel.app`**
 
-Si vous tapez `shamed-vitrine.vercel.app` (avec **i**), vous obtenez une **404** : ce n’est pas le même sous-domaine.
+(Nom du projet Vercel : **shamed-site**, aligné avec le dépôt GitHub `SHAMEDMK/shamed-site`.)
 
-**Pour corriger** : dans Vercel → projet → **Settings** → **General** → **Project Name**, renommer en `shamed-vitrine` (orthographe correcte). L’URL deviendra alors `https://shamed-vitrine.vercel.app` (l’ancienne `shamed-vtrine` peut rediriger un temps selon Vercel).
+Vous pouvez retirer l’ancien domaine `shamed-vtrine.vercel.app` dans Vercel → **Domains** s’il est encore listé et inutile.
 
 ## Prérequis avant production
 
