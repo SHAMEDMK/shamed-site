@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.shamed.ma/sitemap.xml
+Sitemap: https://shamed.ma/sitemap.xml
