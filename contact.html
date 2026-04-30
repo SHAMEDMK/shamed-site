@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactez-nous | Shamed Maroc</title>
-    <meta name="description" content="Contactez Shamed pour un devis ou une démonstration. Distributeur Kerox Dental au Maroc – Zircone, PMMA, résines 3D pour laboratoires dentaires.">
-    <meta property="og:title" content="Contact | Shamed – Distributeur Kerox Dental Maroc">
-    <meta property="og:description" content="Devis, démonstration et support technique. Solutions dentaires premium pour laboratoires et prothésistes au Maroc.">
+    <title>Contact — Devis et accès client SHAMED | Maroc</title>
+    <meta name="description" content="Contactez SHAMED : tarif professionnel, disponibilité produit, devis ou ouverture d’accès client. Laboratoires, cabinets, centres CAD/CAM et revendeurs.">
+    <meta property="og:title" content="Contact | SHAMED — Professionnels dentaires Maroc">
+    <meta property="og:description" content="Demande de devis, disponibilité ou accès client SHAMED. Réponse selon disponibilité de l’équipe.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.shamed.ma/contact.html">
     <meta property="og:locale" content="fr_MA">
@@ -134,7 +134,7 @@
                 </li>
                 <li><a href="a-propos.html">À propos</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
-                <li><a href="https://erp.shamed.ma/login?utm_source=shamed.ma&utm_medium=cta" class="nav-erp-link" target="_blank" rel="noopener noreferrer">Espace client</a></li>
+                <li><a href="https://erp.shamed.ma/login?utm_source=shamed.ma&utm_medium=cta" class="nav-erp-link" target="_blank" rel="noopener noreferrer">Espace client SHAMED</a></li>
             </ul>
             <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
                 <span></span><span></span><span></span>
@@ -151,22 +151,23 @@
             <li><a href="consommables.html">Consommables Divers</a></li>
             <li><a href="a-propos.html">À propos</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="https://erp.shamed.ma/login?utm_source=shamed.ma&utm_medium=cta" target="_blank" rel="noopener noreferrer">Espace client (ERP)</a></li>
+            <li><a href="https://erp.shamed.ma/login?utm_source=shamed.ma&utm_medium=cta" target="_blank" rel="noopener noreferrer">Espace client SHAMED</a></li>
         </ul>
     </div>
 
     <!-- Page Hero -->
     <header id="main" class="page-hero">
         <div class="page-hero-content fade-in">
-            <div class="subtitle-slogan">Vous avez un projet ?</div>
-            <h1>Contactez-nous</h1>
-            <p>Notre équipe est à votre disposition pour toute information technique, devis ou demande de démonstration.</p>
+            <div class="subtitle-slogan">SHAMED — professionnels dentaires</div>
+            <h1>Contact et demandes B2B</h1>
+            <p>Vous êtes laboratoire dentaire, cabinet, centre CAD/CAM ou revendeur ? Envoyez-nous votre demande : tarif professionnel, disponibilité produit, devis ou ouverture d’accès client SHAMED.</p>
         </div>
     </header>
 
     <div class="contact-page-container fade-in">
-        <div class="contact-form-container">
+        <div class="contact-form-container" id="formulaire-contact">
             <h2>Demande professionnelle</h2>
+            <p style="margin-bottom: 1.25rem; color: var(--clr-navy); opacity: 0.88; line-height: 1.55; font-size: 0.95rem;">Après réception de votre demande, un conseiller SHAMED vous recontacte pour confirmer le besoin, la disponibilité et les prochaines étapes. Réponse généralement dans la journée ouvrable, selon disponibilité de l’équipe.</p>
             <form id="contact-form" action="https://formspree.io/f/mbdwrpyo" method="POST">
                 <input type="hidden" name="_next" value="https://shamed.ma/contact-merci.html">
                 <input type="hidden" name="_subject" value="Nouvelle demande professionnelle SHAMED">
@@ -179,39 +180,63 @@
                     <input id="contact-email" type="email" name="email" autocomplete="email" placeholder="vous@entreprise.ma" required>
                 </div>
                 <div class="form-group">
-                    <label for="contact-type">Type d'établissement</label>
+                    <label for="contact-type">Type de structure</label>
                     <select id="contact-type" name="type_client" required>
                         <option value="" disabled selected>Choisir…</option>
                         <option value="laboratoire">Laboratoire dentaire</option>
                         <option value="dentiste">Cabinet dentaire</option>
-                        <option value="revendeur">Revendeur / distributeur</option>
+                        <option value="centre_cam">Centre CAD/CAM</option>
+                        <option value="revendeur">Revendeur</option>
+                        <option value="autre">Autre</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="contact-ville">Ville</label>
-                    <input id="contact-ville" type="text" name="ville" autocomplete="address-level2" placeholder="Ex. Casablanca" required>
+                    <input id="contact-ville" type="text" name="ville" autocomplete="address-level2" placeholder="Ex. Casablanca, Rabat, Marrakech…" required>
                 </div>
                 <div class="form-group">
                     <label for="contact-tel">Téléphone</label>
-                    <input id="contact-tel" type="tel" name="telephone" autocomplete="tel" placeholder="+212 …" required>
+                    <input id="contact-tel" type="tel" name="telephone" autocomplete="tel" placeholder="+212 614 150 005" required>
                 </div>
                 <div class="form-group">
-                    <label for="contact-message">Message</label>
-                    <textarea id="contact-message" name="message" placeholder="Besoins, gammes souhaitées, volumes…" required></textarea>
+                    <label for="contact-produit">Produit ou gamme recherché(e) (facultatif)</label>
+                    <input id="contact-produit" type="text" name="produit_recherche" autocomplete="off" placeholder="Ex. ZircoStar®, PMMA, consommables…">
                 </div>
-                <button type="submit" class="btn-primary" style="width: 100%; border:none;">Envoyer la demande</button>
+                <div class="form-group">
+                    <label for="contact-besoin">Besoin principal (facultatif)</label>
+                    <select id="contact-besoin" name="besoin">
+                        <option value="" selected>Précisez aussi dans le message si besoin</option>
+                        <option value="devis">Devis professionnel</option>
+                        <option value="disponibilite">Disponibilité produit</option>
+                        <option value="ouverture_compte">Ouverture d’accès client SHAMED</option>
+                        <option value="info_produit">Information produit</option>
+                        <option value="autre_besoin">Autre</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Message — décrivez votre besoin</label>
+                    <textarea id="contact-message" name="message" placeholder="Ex. devis pour… disponibilité de… demande d’ouverture de compte, questions sur une référence…" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%; border:none;">Envoyer la demande professionnelle</button>
                 <p id="contact-form-status" role="status" aria-live="polite" style="margin-top: 1rem; color: var(--clr-navy);"></p>
             </form>
             <div class="contact-erp-after">
-                <p>Déjà client ? Connectez-vous pour commander.</p>
-                <a href="https://erp.shamed.ma/login?utm_source=shamed.ma&utm_medium=cta" class="btn-outline-navy" target="_blank" rel="noopener noreferrer">Accéder à l'espace client</a>
+                <p>Déjà un accès ? Connectez-vous à votre espace client SHAMED.</p>
+                <a href="https://erp.shamed.ma/login?utm_source=shamed.ma&utm_medium=cta" class="btn-outline-navy" target="_blank" rel="noopener noreferrer">Accéder à mon espace client SHAMED</a>
+                <p style="margin-top: 1rem; font-size: 0.82rem; opacity: 0.72;">Plateforme propulsée par Douma Dental Manager.</p>
             </div>
         </div>
 
         <div class="contact-info-side">
-            <h2>Informations de Contact</h2>
-            <p>Nous intervenons dans tout le Royaume du Maroc. N'hésitez pas à nous appeler directement ou à nous envoyer un message via WhatsApp.</p>
-            
+            <h2>Coordonnées SHAMED</h2>
+            <p>Nous intervenons au Maroc auprès des professionnels du secteur dentaire. Pour une demande suivie (devis, disponibilité, accès client), le formulaire ci-contre nous permet de mieux qualifier votre besoin.</p>
+            <p style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center;">
+                <a href="#formulaire-contact" class="btn-primary">Demander un devis professionnel</a>
+                <a href="#formulaire-contact" class="btn-outline-navy">Vérifier la disponibilité</a>
+            </p>
+            <p style="margin-top: 1rem;">
+                <a href="https://erp.shamed.ma/login?utm_source=shamed.ma&utm_medium=cta" class="btn-outline-navy" target="_blank" rel="noopener noreferrer">Accéder à mon espace client SHAMED</a>
+            </p>
             <div class="contact-details-list">
                 <div class="contact-detail-item">
                     <div class="detail-icon-circle">
@@ -265,8 +290,8 @@
             </div>
             <div class="footer-links footer-erp">
                 <h3>Espace professionnel</h3>
-                <p><a href="https://erp.shamed.ma/login?utm_source=shamed.ma&utm_medium=cta" target="_blank" rel="noopener noreferrer">Douma — Espace client</a></p>
-                <p class="footer-erp-hint">Commandes, catalogue &amp; factures</p>
+                <p><a href="https://erp.shamed.ma/login?utm_source=shamed.ma&utm_medium=cta" target="_blank" rel="noopener noreferrer">Espace client SHAMED</a></p>
+                <p class="footer-erp-hint">Commandes, catalogue et factures — propulsé par Douma Dental Manager</p>
             </div>
             <div class="footer-social">
                 <h3>Suivez-nous</h3>
@@ -281,7 +306,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Shamed. <a href="mentions-legales.html">Mentions légales</a> · <a href="politique-confidentialite.html">Confidentialité</a></p>
+            <p>&copy; 2026 Shamed. <a href="mentions-legales.html">Mentions légales</a> · <a href="politique-confidentialite.html" title="Politique de confidentialité — SHAMED">Confidentialité</a></p>
         </div>
     </footer>
 
@@ -299,7 +324,7 @@
                 const submitButton = form.querySelector('button[type="submit"]');
                 if (submitButton) {
                     submitButton.disabled = true;
-                    submitButton.textContent = 'Envoi en cours...';
+                    submitButton.textContent = 'Envoi en cours…';
                 }
                 if (status) status.textContent = 'Envoi de votre demande en cours...';
 
@@ -328,7 +353,7 @@
                 } finally {
                     if (submitButton) {
                         submitButton.disabled = false;
-                        submitButton.textContent = 'Envoyer la demande';
+                        submitButton.textContent = 'Envoyer la demande professionnelle';
                     }
                 }
             });

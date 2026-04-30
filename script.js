@@ -1,21 +1,41 @@
 // Intersection Observer for fade-in animations
 document.addEventListener('DOMContentLoaded', () => {
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+    const reveal = (el) => {
+        el.classList.add('appear');
     };
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('appear');
-                observer.unobserve(entry.target);
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    /* Sans IntersectionObserver : tout afficher (évite contenu invisible) */
+    if (!('IntersectionObserver' in window)) {
+        fadeElements.forEach(reveal);
+    } else {
+        /* threshold 0 : dès qu’un pixel est visible (les grandes sections ne restent pas bloquées à opacity:0) */
+        const observerOptions = {
+            threshold: 0,
+            rootMargin: '0px 0px 0px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    reveal(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        fadeElements.forEach(el => {
+            observer.observe(el);
+            /* Éléments déjà dans le viewport au chargement */
+            const rect = el.getBoundingClientRect();
+            const vh = window.innerHeight || document.documentElement.clientHeight;
+            if (rect.top < vh && rect.bottom > 0) {
+                reveal(el);
+                observer.unobserve(el);
             }
         });
-    }, observerOptions);
-
-    const fadeElements = document.querySelectorAll('.fade-in');
-    fadeElements.forEach(el => observer.observe(el));
+    }
 
     // Simple sticky nav effect
     const navbar = document.getElementById('navbar');
