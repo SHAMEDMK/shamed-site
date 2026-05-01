@@ -13,8 +13,8 @@
 | **Couleur principale (Navy)** | `#233C67` (`--clr-navy`) |
 | **Couleur accent (Cuivre)** | `#CD9A50` (`--clr-copper`) |
 | **Cuivre survol** | `#B58444` (`--clr-copper-hover`) |
-| **Typographie titres** | `Playfair Display` |
-| **Typographie corps** | `Inter` |
+| **Typographie titres & CTA** | `Manrope` (`--font-heading`) |
+| **Typographie corps** | `Inter` (`--font-body`) |
 | **Navigation** | Fond doré glassmorphism `rgba(205, 154, 80, 0.92)`, `backdrop-filter: blur(10px)` |
 | **Cartes produits (survol)** | Fond cuivre, texte navy |
 | **Boutons primaires** | Fond cuivre, texte blanc, survol cuivre plus foncé |
@@ -26,7 +26,7 @@
 ### Obligatoire sur chaque page
 
 - Skip link : `<a href="#main" class="skip-link">Aller au contenu</a>` en début de `body`
-- Nav `glass-nav` avec logo `images/logocuivre_shamed-removebg.png` (fallback texte `S`hamed.) et dropdown Produits
+- Nav `glass-nav` avec logo texte `S`hamed. et dropdown Produits
 - Menu mobile `#mobileMenu` avec tous les liens
 - Contenu principal avec `id="main"` sur le hero
 - Footer avec marque, contact, réseaux sociaux, liens légaux
@@ -114,7 +114,7 @@
 
 | Tâche | Fichier(s) concerné(s) |
 |-------|-------------------------|
-| Remplacer le numéro WhatsApp | `index.html`, `contact.html`, `a-propos.html`, `pmma.html`, `zircone.html`, `resine-3d.html` |
+| Numéro WhatsApp (+212 614 150 005) | Configuré (toutes les pages `.html`, y compris `consommables`, mentions, politique) |
 | Formspree | `contact.html` → remplacer `YOUR_FORM_ID` |
 | Réseaux sociaux | Facebook, Instagram (placeholders actuels) |
 | Pages légales | `mentions-legales.html`, `politique-confidentialite.html` |

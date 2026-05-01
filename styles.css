@@ -11,9 +11,9 @@
     --clr-copper: #CD9A50;
     --clr-copper-hover: #B58444;
 
-    /* Typography */
-    --font-heading: 'Playfair Display', serif;
-    --font-body: 'Inter', sans-serif;
+    /* Typography — Manrope titres / CTA, Inter corps */
+    --font-heading: "Manrope", "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -40,8 +40,28 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4 {
+h1 {
     font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    color: var(--clr-navy);
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--clr-navy);
+}
+
+h3,
+h4 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: normal;
     color: var(--clr-navy);
 }
 
@@ -67,6 +87,7 @@ textarea:focus-visible {
     padding: 0.5rem 1rem;
     background: var(--clr-navy);
     color: var(--clr-white);
+    font-family: var(--font-heading);
     font-weight: 600;
     z-index: 10000;
     transition: top 0.2s;
@@ -99,7 +120,8 @@ ul {
     display: inline-block;
     padding: 0.8rem 1.8rem;
     border-radius: 4px;
-    font-weight: 500;
+    font-family: var(--font-heading);
+    font-weight: 600;
     font-size: 0.95rem;
     transition: var(--transition-smooth);
     cursor: pointer;
@@ -298,7 +320,8 @@ ul {
 .hero-content h1 {
     font-size: clamp(3rem, 5vw, 4.5rem);
     color: var(--clr-navy);
-    line-height: 1.1;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
     margin-bottom: 1.5rem;
 }
 
@@ -345,6 +368,8 @@ ul {
 .section-header h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
 }
 
 .section-header p {
@@ -406,6 +431,7 @@ ul {
 }
 
 .link-btn {
+    font-family: var(--font-heading);
     color: var(--clr-navy);
     font-weight: 600;
     font-size: 0.9rem;
@@ -789,7 +815,8 @@ ul {
 .page-hero h1 {
     font-size: clamp(2.2rem, 4vw, 3.5rem);
     color: var(--clr-white);
-    line-height: 1.15;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
     margin-bottom: 1.2rem;
 }
 
@@ -1015,7 +1042,8 @@ ul {
     color: white !important; 
     padding: 1rem; 
     border-radius: 8px; 
-    font-weight: 700; 
+    font-family: var(--font-heading);
+    font-weight: 600; 
     text-transform: uppercase;
     font-size: 0.8rem;
     letter-spacing: 1px;
@@ -1042,7 +1070,8 @@ ul {
     padding: 0.45rem 1rem !important;
     border: 2px solid rgba(255, 255, 255, 0.95);
     border-radius: 6px;
-    font-weight: 700 !important;
+    font-family: var(--font-heading) !important;
+    font-weight: 600 !important;
     font-size: 0.88rem !important;
 }
 .nav-erp-link:hover {
@@ -1089,7 +1118,8 @@ ul {
 
 .hero-b2b-text h1 {
     font-size: clamp(2rem, 4.2vw, 2.85rem);
-    line-height: 1.12;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
     color: var(--clr-navy);
     margin-bottom: 1.1rem;
     max-width: 18ch;
@@ -1189,7 +1219,8 @@ ul {
 
 .hero-visual-fallback-kicker {
     font-size: 0.75rem;
-    font-weight: 700;
+    font-family: var(--font-heading);
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--clr-copper);
@@ -1238,6 +1269,7 @@ ul {
     display: inline-block;
     padding: 0.8rem 1.8rem;
     border-radius: 4px;
+    font-family: var(--font-heading);
     font-weight: 600;
     font-size: 0.95rem;
     background: transparent;
@@ -1257,6 +1289,7 @@ ul {
     display: inline-block;
     padding: 0.8rem 1.8rem;
     border-radius: 4px;
+    font-family: var(--font-heading);
     font-weight: 600;
     font-size: 0.95rem;
     background: transparent;
@@ -1340,7 +1373,6 @@ ul {
 .why-item h3 {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
-    font-family: var(--font-body);
     font-weight: 600;
 }
 .why-item p {
@@ -1484,16 +1516,15 @@ ul {
     border-radius: 50%;
     background: var(--clr-navy);
     color: var(--clr-white);
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1rem;
     margin-bottom: 1rem;
-    font-family: var(--font-body);
+    font-family: var(--font-heading);
 }
 
 .steps-3-item h3 {
     font-size: 1.15rem;
     margin-bottom: 0.5rem;
-    font-family: var(--font-body);
     font-weight: 600;
 }
 .steps-3-item p {
@@ -1569,7 +1600,8 @@ ul {
     border: 1px solid rgba(35, 60, 103, 0.08);
 }
 .home-contact-aside-title {
-    font-weight: 700;
+    font-family: var(--font-heading);
+    font-weight: 600;
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.06em;
@@ -1597,6 +1629,8 @@ ul {
     margin: 0 auto;
 }
 .home-final-cta-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
     color: var(--clr-white);
     font-size: clamp(1.5rem, 2.5vw, 2rem);
     margin-bottom: 0.5rem;
@@ -1693,7 +1727,6 @@ ul {
 }
 
 .zircostar-audience-item h3 {
-    font-family: var(--font-body);
     font-size: 1.15rem;
     font-weight: 600;
     margin-bottom: 0.6rem;
@@ -1772,7 +1805,8 @@ ul {
     background: var(--clr-navy);
     color: var(--clr-white);
     font-size: 0.72rem;
-    font-weight: 700;
+    font-family: var(--font-heading);
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.06em;
     padding: 0.35rem 0.75rem;
