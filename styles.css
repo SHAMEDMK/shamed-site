@@ -1356,6 +1356,13 @@ ul {
     background: var(--clr-gray-light);
 }
 
+/* Accueil : profils (bloc court, entre Pourquoi et parcours client) */
+.home-profils {
+    padding-top: 3.25rem;
+    padding-bottom: 3.25rem;
+    border-bottom: 1px solid rgba(35, 60, 103, 0.06);
+}
+
 .why-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
